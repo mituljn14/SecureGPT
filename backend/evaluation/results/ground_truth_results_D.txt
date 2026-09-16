@@ -1,0 +1,104 @@
+Ground truth recomputed from C:\Users\Admin\Desktop\SecProj\SecureGPT\corpus
+
+
+==============================================================================
+Q1  [Operations / COO / Logistics]
+  In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?
+  expect sum(Cost_INR) = 164,734,016.0000   over 690 rows of Shipment_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?'
+
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 967.85it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 9401.36it/s]
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+============================================================
+FINAL ANSWER:
+Failed after 3 attempt(s): Execution failed with non-zero exit code.
+
+Actual Traceback:
+COLUMN NAME ERROR -- this code was not executed.
+
+  'Year' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.
+
+The ONLY valid columns are: ['Carrier', 'Cost_INR', 'Destination', 'Mode', 'Origin', 'Shipment_ID', 'Status', 'Transit_Days', 'Weight_Tons']
+Rewrite using those names exactly.
+============================================================
+Attempts used: 3
+
+Generated Code:
+import pandas as pd
+import json
+
+# Load the relevant CSV file
+shipment_data = pd.read_csv('/workspace/Shipment_Data_Q1_2017.csv')
+
+# Filter the data to only include rows where the 'Year' is 2017
+filtered_data = shipment_data[shipment_data['Year'] == 2017]
+
+# Calculate the total shipment cost in INR
+total_cost = filtered_data['Cost_INR'].sum()
+
+# Prepare the result
+result = {
+    "answer": total_cost,
+    "details": {
+        "total_cost": total_cost,
+        "filtered_data": filtered_data.to_dict(orient='records')
+    }
+}
+
+# Print the result
+print("___RESULT___" + json.dumps(result, default=str))
+
+Verification: {'status': 'fail', 'reason': "Execution failed with non-zero exit code.\n\nActual Traceback:\nCOLUMN NAME ERROR -- this code was not executed.\n\n  'Year' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.\n\nThe ONLY valid columns are: ['Carrier', 'Cost_INR', 'Destination', 'Mode', 'Origin', 'Shipment_ID', 'Status', 'Transit_Days', 'Weight_Tons']\nRewrite using those names exactly.", 'result': None, 'warnings': []}
+  -> FAIL got=None attempts=3 315.5s
+
+==============================================================================
+Q2  [Operations / COO / Production]
+  What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?
+  expect sum(Scrap_Qty) = 9,109.0000   over 712 rows of Work_Order_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?'
+
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+============================================================
+FINAL ANSWER:
+Answer: 45888.299999999996
+============================================================
+Attempts used: 1
+
+Generated Code:
+import json
+import pandas as pd
+df = pd.read_excel('/workspace/Budget_Tracker_Q1_2017.xlsx')
+total_budgeted = df['Budgeted_INR_Lakh'].sum()
+print("___RESULT___" + json.dumps({"answer": total_budgeted, "details": {"total_budgeted": total_budgeted}}, default=str))
+
+Verification: {'status': 'pass', 'reason': 'Execution succeeded and result validated.', 'result': {'answer': 45888.299999999996, 'details': {'total_budgeted': 45888.299999999996}}, 'warnings': []}
+  -> FAIL got=45888.299999999996 attempts=1 128.4s
+
+==============================================================================
+END-TO-END (default model): 0/2 passed
+==============================================================================
+Q   area                                           expected                got  att    sec  result
+--------------------------------------------------------------------------------------------------------------
+1   Operations / COO / Logistics           164,734,016.0000                  -    3  315.5  FAIL (no answer (Execution failed with non-zero exit code.
+
+Actual Traceback:))
+2   Operations / COO / Production                9,109.0000        45,888.3000    1  128.4  FAIL (wrong value)
+--------------------------------------------------------------------------------------------------------------
+total wall clock: 443.9s   mean: 221.9s/question
+                                          expected                got  att    sec  result
+--------------------------------------------------------------------------------------------------------------
+1   Operations / COO / Logistics           164,734,016.0000             3.0000    3  261.0  FAIL (wrong value)
+2   Operations / COO / Production                9,109.0000             0.0000    2   74.9  FAIL (wrong value)
+--------------------------------------------------------------------------------------------------------------
+total wall clock: 335.9s   mean: 167.9s/question

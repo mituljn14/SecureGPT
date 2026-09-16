@@ -1,0 +1,58 @@
+[
+  {
+    "query": "What did the risk assessment report flag as our top concerns?",
+    "role": "CLO",
+    "expect_destination": "enterprise",
+    "note": "Doesn't literally say 'Nova' or 'our company' -- exactly the phrasing gap that let the single-call supervisor classify a real company question as general knowledge and answer it ungrounded. Tests the corpus-relevance override in supervisor.py (_corpus_has_real_match).",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "Give me a rundown of the latest procurement performance numbers.",
+    "role": "CFO",
+    "expect_destination": "enterprise",
+    "note": "Same override test, Finance-flavored phrasing.",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "What were the key highlights from the 2022 annual report?",
+    "role": "CEO",
+    "expect_destination": "enterprise",
+    "note": "Single-year fact retrieval, broadest-access role.",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "Summarize revenue trends from 2014 to 2018.",
+    "role": "CFO",
+    "expect_destination": "enterprise",
+    "note": "Year-RANGE parsing (query_metadata_parser.py) -- must not collapse to fiscal_year==2014 only.",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "What did the board discuss in the most recent meeting minutes?",
+    "role": "Corporate_Strategy",
+    "expect_destination": "enterprise",
+    "note": "Executive/board content, non-Finance role.",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "What is our current compliance audit status?",
+    "role": "CLO",
+    "expect_destination": "enterprise",
+    "note": "Legal/Compliance department query.",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  },
+  {
+    "query": "What is our company's detailed plan for colonizing Mars?",
+    "role": "CEO",
+    "expect_destination": "enterprise",
+    "note": "Nonsense-but-company-phrased query with certainly nothing in the corpus -- must come back as 'not found', not a confidently invented plan. Also exercises the CRAG/multi-hop escalation path (low fast-retrieval confidence).",
+    "error": "Pipeline raised: 'charmap' codec can't encode character '\\U0001f9e0' in position 0: character maps to <undefined>",
+    "routing_correct": false
+  }
+]

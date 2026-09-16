@@ -1,0 +1,42 @@
+# Python
+backend/venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# Database / Vector Stores
+qdrant+_backup/
+backend/quadrant_embeddings/data/
+*.tar.gz
+*.7z
+*.db
+*.sqlite
+# IDE / OS / Agent
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.gemini/
+
+# recovered secrets / artifacts
+*DOTENV_SECRET*
+backend/_recovered_artifacts/
+
+# --- v2 data (large; keep in git only the code + decision log) --------------
+corpus/
+markdown/
+raw/
+chunks/
+embeddings/
+*.zip
+*.npz
+*.jsonl.gz

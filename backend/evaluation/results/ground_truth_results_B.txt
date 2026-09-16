@@ -1,0 +1,15 @@
+Ground truth recomputed from C:\Users\Admin\Desktop\SecProj\SecureGPT\corpus
+
+
+==============================================================================
+Q1  [Operations / COO / Logistics]
+  In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?
+  expect sum(Cost_INR) = 164,734,016.0000   over 690 rows of Shipment_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?'
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 1994.31it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 19055.05it/s]
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...

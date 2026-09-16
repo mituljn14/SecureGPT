@@ -1,0 +1,337 @@
+
+
+================================================================================
+1 RECORD(S) PER CHUNK — 224 tokens — 5000 chunks for this file
+================================================================================
+Technology_Digital > CDO > Nova_CDO_Dashboards
+Enterprise_Dashboard_Catalog_Part_1.csv
+Table: Enterprise Dashboard Catalog (records 1-1 of 5000)
+———
+Dashboard_ID: DB-01-000001
+Dashboard_Name: Nova_Warranty_Analytics_Dashboard_00001
+Dashboard_Type: Warranty Analytics Dashboard
+Business_Domain: Customer
+Owner: Arjun Nair – BI Platform Architect
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 36
+Primary_Source: Data Warehouse
+Semantic_Model: SM_7609
+Refresh_Frequency: Monthly
+Last_Refresh: 2026-05-23
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 99.34
+Avg_Load_Time_Seconds: 7.34
+User_Count: 6945
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v2.8
+Lifecycle_Status: Retired
+
+================================================================================
+4 RECORD(S) PER CHUNK — 770 tokens — 1250 chunks for this file
+================================================================================
+Technology_Digital > CDO > Nova_CDO_Dashboards
+Enterprise_Dashboard_Catalog_Part_1.csv
+Table: Enterprise Dashboard Catalog (records 1-4 of 5000)
+———
+Dashboard_ID: DB-01-000001
+Dashboard_Name: Nova_Warranty_Analytics_Dashboard_00001
+Dashboard_Type: Warranty Analytics Dashboard
+Business_Domain: Customer
+Owner: Arjun Nair – BI Platform Architect
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 36
+Primary_Source: Data Warehouse
+Semantic_Model: SM_7609
+Refresh_Frequency: Monthly
+Last_Refresh: 2026-05-23
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 99.34
+Avg_Load_Time_Seconds: 7.34
+User_Count: 6945
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v2.8
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000002
+Dashboard_Name: Nova_Workforce_Utilization_Dashboard_00002
+Dashboard_Type: Workforce Utilization Dashboard
+Business_Domain: Warranty
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 25
+Primary_Source: MES
+Semantic_Model: SM_8719
+Refresh_Frequency: Hourly
+Last_Refresh: 2026-06-20
+Data_Freshness_Status: Delayed
+Availability_Percent: 97.5
+Avg_Load_Time_Seconds: 13.55
+User_Count: 18786
+Certification_Status: Retired
+Access_Level: Confidential
+RAG_Eligible: Yes
+Version: v2.3
+Lifecycle_Status: Suspended
+
+Dashboard_ID: DB-01-000003
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00003
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Finance
+Owner: Sofia Martinez – Analytics Governance Lead
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 24
+Primary_Source: CRM
+Semantic_Model: SM_1116
+Refresh_Frequency: Daily
+Last_Refresh: 2026-05-01
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 95.04
+Avg_Load_Time_Seconds: 10.79
+User_Count: 6718
+Certification_Status: Certified
+Access_Level: Internal
+RAG_Eligible: Yes
+Version: v1.2
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000004
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00004
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Sales
+Owner: Sofia Martinez – Analytics Governance Lead
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 32
+Primary_Source: IoT Platform
+Semantic_Model: SM_4539
+Refresh_Frequency: Weekly
+Last_Refresh: 2026-01-01
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 95.35
+Avg_Load_Time_Seconds: 12.46
+User_Count: 13416
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v2.0
+Lifecycle_Status: Suspended
+
+================================================================================
+10 RECORD(S) PER CHUNK — 1872 tokens — 500 chunks for this file
+================================================================================
+Technology_Digital > CDO > Nova_CDO_Dashboards
+Enterprise_Dashboard_Catalog_Part_1.csv
+Table: Enterprise Dashboard Catalog (records 1-10 of 5000)
+———
+Dashboard_ID: DB-01-000001
+Dashboard_Name: Nova_Warranty_Analytics_Dashboard_00001
+Dashboard_Type: Warranty Analytics Dashboard
+Business_Domain: Customer
+Owner: Arjun Nair – BI Platform Architect
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 36
+Primary_Source: Data Warehouse
+Semantic_Model: SM_7609
+Refresh_Frequency: Monthly
+Last_Refresh: 2026-05-23
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 99.34
+Avg_Load_Time_Seconds: 7.34
+User_Count: 6945
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v2.8
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000002
+Dashboard_Name: Nova_Workforce_Utilization_Dashboard_00002
+Dashboard_Type: Workforce Utilization Dashboard
+Business_Domain: Warranty
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 25
+Primary_Source: MES
+Semantic_Model: SM_8719
+Refresh_Frequency: Hourly
+Last_Refresh: 2026-06-20
+Data_Freshness_Status: Delayed
+Availability_Percent: 97.5
+Avg_Load_Time_Seconds: 13.55
+User_Count: 18786
+Certification_Status: Retired
+Access_Level: Confidential
+RAG_Eligible: Yes
+Version: v2.3
+Lifecycle_Status: Suspended
+
+Dashboard_ID: DB-01-000003
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00003
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Finance
+Owner: Sofia Martinez – Analytics Governance Lead
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 24
+Primary_Source: CRM
+Semantic_Model: SM_1116
+Refresh_Frequency: Daily
+Last_Refresh: 2026-05-01
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 95.04
+Avg_Load_Time_Seconds: 10.79
+User_Count: 6718
+Certification_Status: Certified
+Access_Level: Internal
+RAG_Eligible: Yes
+Version: v1.2
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000004
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00004
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Sales
+Owner: Sofia Martinez – Analytics Governance Lead
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 32
+Primary_Source: IoT Platform
+Semantic_Model: SM_4539
+Refresh_Frequency: Weekly
+Last_Refresh: 2026-01-01
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 95.35
+Avg_Load_Time_Seconds: 12.46
+User_Count: 13416
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v2.0
+Lifecycle_Status: Suspended
+
+Dashboard_ID: DB-01-000005
+Dashboard_Name: Nova_Executive_Performance_Dashboard_00005
+Dashboard_Type: Executive Performance Dashboard
+Business_Domain: Workforce
+Owner: Sofia Martinez – Analytics Governance Lead
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 35
+Primary_Source: Data Lakehouse
+Semantic_Model: SM_8236
+Refresh_Frequency: Daily
+Last_Refresh: 2026-01-05
+Data_Freshness_Status: Fresh
+Availability_Percent: 96.32
+Avg_Load_Time_Seconds: 11.97
+User_Count: 1123
+Certification_Status: Draft
+Access_Level: Highly Confidential
+RAG_Eligible: No
+Version: v5.2
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000006
+Dashboard_Name: Nova_Manufacturing_Operations_Dashboard_00006
+Dashboard_Type: Manufacturing Operations Dashboard
+Business_Domain: Sales
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 37
+Primary_Source: Data Warehouse
+Semantic_Model: SM_6698
+Refresh_Frequency: Weekly
+Last_Refresh: 2026-01-15
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 97.03
+Avg_Load_Time_Seconds: 8.43
+User_Count: 6090
+Certification_Status: Retired
+Access_Level: Internal
+RAG_Eligible: Yes
+Version: v3.2
+Lifecycle_Status: Active
+
+Dashboard_ID: DB-01-000007
+Dashboard_Name: Nova_Executive_Performance_Dashboard_00007
+Dashboard_Type: Executive Performance Dashboard
+Business_Domain: Manufacturing
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 54
+Primary_Source: MES
+Semantic_Model: SM_7479
+Refresh_Frequency: Daily
+Last_Refresh: 2026-03-09
+Data_Freshness_Status: Fresh
+Availability_Percent: 99.52
+Avg_Load_Time_Seconds: 4.21
+User_Count: 6538
+Certification_Status: Draft
+Access_Level: Internal
+RAG_Eligible: Yes
+Version: v4.5
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000008
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00008
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Engineering
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 7
+Primary_Source: Data Lakehouse
+Semantic_Model: SM_7909
+Refresh_Frequency: Daily
+Last_Refresh: 2026-06-22
+Data_Freshness_Status: Under Investigation
+Availability_Percent: 98.82
+Avg_Load_Time_Seconds: 2.35
+User_Count: 6639
+Certification_Status: Retired
+Access_Level: Confidential
+RAG_Eligible: Conditional
+Version: v5.4
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000009
+Dashboard_Name: Nova_Sales_Pipeline_Dashboard_00009
+Dashboard_Type: Sales Pipeline Dashboard
+Business_Domain: Sales
+Owner: Dr. Ananya Mehta – Chief Data Officer
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 35
+Primary_Source: PLM
+Semantic_Model: SM_2532
+Refresh_Frequency: Monthly
+Last_Refresh: 2026-05-15
+Data_Freshness_Status: Stale
+Availability_Percent: 98.15
+Avg_Load_Time_Seconds: 3.16
+User_Count: 24377
+Certification_Status: Retired
+Access_Level: Confidential
+RAG_Eligible: No
+Version: v4.3
+Lifecycle_Status: Retired
+
+Dashboard_ID: DB-01-000010
+Dashboard_Name: Nova_Executive_Performance_Dashboard_00010
+Dashboard_Type: Executive Performance Dashboard
+Business_Domain: Finance
+Owner: Arjun Nair – BI Platform Architect
+Business_Purpose: Provides governed decision support through certified KPIs, trends, exceptions, drill-down analysis, and controlled data visualization.
+KPI_Count: 19
+Primary_Source: CRM
+Semantic_Model: SM_9223
+Refresh_Frequency: Daily
+Last_Refresh: 2026-03-14
+Data_Freshness_Status: Delayed
+Availability_Percent: 95.71
+Avg_Load_Time_Seconds: 17.53
+User_Count: 18394
+Certification_Status: Under Review
+Access_Level: Internal
+RAG_Eligible: Conditional
+Version: v4.2
+Lifecycle_Status: Active

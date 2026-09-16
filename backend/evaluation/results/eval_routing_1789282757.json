@@ -1,0 +1,58 @@
+[
+  {
+    "query": "Generate the minutes for this recording",
+    "role": "CEO",
+    "expect_destination": "meeting",
+    "note": "Audio attachment -> meeting agent, no LLM call.",
+    "elapsed_seconds": 0.0,
+    "actual_destination": "meeting",
+    "routing_correct": true,
+    "answer": "",
+    "num_contexts": 0,
+    "ragas_skipped_reason": "routing-only row"
+  },
+  {
+    "query": "Generate the minutes for this recording",
+    "role": "CEO",
+    "expect_destination": "meeting",
+    "note": "The re-download rename that broke routing before: .mpeg must still reach the meeting agent.",
+    "elapsed_seconds": 0.0,
+    "actual_destination": "meeting",
+    "routing_correct": true,
+    "answer": "",
+    "num_contexts": 0,
+    "ragas_skipped_reason": "routing-only row"
+  },
+  {
+    "query": "What does this diagram show?",
+    "role": "CEO",
+    "expect_destination": "vision",
+    "note": "Image attachment -> vision agent.",
+    "elapsed_seconds": 0.0,
+    "actual_destination": "vision",
+    "routing_correct": true,
+    "answer": "",
+    "num_contexts": 0,
+    "ragas_skipped_reason": "routing-only row"
+  },
+  {
+    "query": "Visualise this data and generate a bar chart",
+    "role": "CEO",
+    "expect_destination": "vision",
+    "note": "Spreadsheet + chart intent -> vision (ChartGenerator), NOT coding.",
+    "elapsed_seconds": 0.0,
+    "actual_destination": "vision",
+    "routing_correct": true,
+    "answer": "",
+    "num_contexts": 0,
+    "ragas_skipped_reason": "routing-only row"
+  },
+  {
+    "query": "Calculate the total revenue in this file",
+    "role": "CEO",
+    "expect_destination": "coding",
+    "note": "Same spreadsheet, computation intent -> coding. The intent boundary, not the file type, decides.",
+    "error": "Pipeline raised: litellm.InternalServerError: InternalServerError: OpenAIException - Connection error.",
+    "routing_correct": false
+  }
+]

@@ -1,0 +1,45 @@
+# Python 3.13 compatible resolution of requirements.txt.
+# requirements.txt pins torch==2.1.0 and transformers==4.44.2; neither
+# publishes a cp313 wheel, so they cannot install on this interpreter.
+# Pins relaxed to the nearest working versions. Original file kept as-is.
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+python-docx>=1.1.0
+python-pptx>=0.6.23
+openpyxl>=3.1.2
+pandas>=2.0.0
+tiktoken>=0.7.0
+qdrant-client>=1.9.0
+torch
+transformers
+sentence-transformers>=3.0.0
+FlagEmbedding
+fastapi
+uvicorn
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+rank-bm25
+litellm
+langgraph
+pymupdf
+
+# ---- added after the agents were merged (vision / meeting / eval) ----
+# vision agent: OCR (RapidOCR is pure pip; pytesseract only works if the
+# Tesseract binary is installed and is a fallback), charts, images
+rapidocr-onnxruntime
+onnxruntime
+pytesseract
+matplotlib
+pillow
+# meeting agent: Whisper STT; ffmpeg binary comes bundled via imageio-ffmpeg
+openai-whisper
+imageio-ffmpeg
+# vision/coding agent utilities
+bcrypt
+numpy
+# evaluation (optional at runtime; needed for backend/evaluation/*)
+ragas
+instructor
+runpod

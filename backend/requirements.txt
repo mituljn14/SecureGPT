@@ -1,0 +1,33 @@
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pypdf>=4.0.0
+python-docx>=1.1.0
+python-pptx>=0.6.23
+openpyxl>=3.1.2
+pandas>=2.0.0
+tiktoken>=0.7.0
+sentence-transformers>=3.0.0
+qdrant-client>=1.9.0
+torch==2.1.0
+fastapi
+uvicorn
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+rank-bm25
+litellm
+FlagEmbedding==1.3.3
+transformers==4.44.2
+langgraph
+pymupdf
+
+# RAG quality evaluation (retrieval_pipeline/eval/) -- see ragas_eval.py.
+# NOTE: ragas==0.4.3 has an unconditional `from
+# langchain_community.chat_models.vertexai import ChatVertexAI` at import
+# time (ragas/llms/base.py) which no longer exists in current
+# langchain_community (Vertex AI moved to the separate
+# langchain-google-vertexai package). A local shim module is required at
+# venv/Lib/site-packages/langchain_community/chat_models/vertexai.py --
+# see retrieval_pipeline/eval/README.md for the one-time setup script.
+ragas>=0.4.3
+langchain-openai

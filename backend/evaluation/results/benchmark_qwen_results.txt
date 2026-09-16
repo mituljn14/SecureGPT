@@ -1,0 +1,158 @@
+########## qwen2.5-coder:3b ##########
+Ground truth recomputed from C:\Users\Admin\Desktop\SecProj\SecureGPT\corpus
+
+
+==============================================================================
+Q1  [Operations / COO / Logistics]
+  In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?
+  expect sum(Cost_INR) = 164,734,016.0000   over 690 rows of Shipment_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?'
+
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 387.07it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights:  47%|####6     | 182/391 [00:00<00:00, 1817.09it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 2103.44it/s]
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+============================================================
+FINAL ANSWER:
+Failed after 3 attempt(s): Execution failed with non-zero exit code.
+
+Actual Traceback:
+COLUMN NAME ERROR -- this code was not executed.
+
+  'Type' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.
+  'Year' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.
+
+The ONLY valid columns are: ['Carrier', 'Cost_INR', 'Destination', 'Mode', 'Origin', 'Shipment_ID', 'Status', 'Transit_Days', 'Weight_Tons']
+Rewrite using those names exactly.
+============================================================
+Attempts used: 3
+
+Generated Code:
+import pandas as pd
+import json
+
+# Load the shipment data
+shipment_data = pd.read_csv('/workspace/Shipment_Data_Q1_2017.csv')
+
+# Filter the data for Q1 2017 Logistics shipments
+filtered_data = shipment_data[(shipment_data['Year'] == 2017) & (shipment_data['Type'] == 'Logistics')]
+
+# Calculate the total shipment cost in INR
+total_cost = filtered_data['Cost_INR'].sum()
+
+# Prepare the result
+print("___RESULT___" + json.dumps({"answer": total_cost, "details": {"total_cost": total_cost}}, default=str))
+
+Verification: {'status': 'fail', 'reason': "Execution failed with non-zero exit code.\n\nActual Traceback:\nCOLUMN NAME ERROR -- this code was not executed.\n\n  'Type' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.\n  'Year' does not exist, and nothing in the file resembles it. If you added it as a date/period filter, REMOVE that filter -- the file is already scoped to the period in its filename.\n\nThe ONLY valid columns are: ['Carrier', 'Cost_INR', 'Destination', 'Mode', 'Origin', 'Shipment_ID', 'Status', 'Transit_Days', 'Weight_Tons']\nRewrite using those names exactly.", 'result': None, 'warnings': []}
+  -> FAIL got=None attempts=3 298.4s
+
+==============================================================================
+Q2  [Operations / COO / Production]
+  What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?
+  expect sum(Scrap_Qty) = 9,109.0000   over 712 rows of Work_Order_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?'
+
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+Calling Ollama API at http://localhost:11434 (model=qwen2.5-coder:3b)...
+Ollama API responded successfully.
+============================================================
+FINAL ANSWER:
+Answer: 46905.99999999999
+============================================================
+Attempts used: 2
+
+Generated Code:
+import pandas as pd
+import json
+
+# Load the Budget_Tracker_Q1_2017.xlsx file
+df = pd.read_excel('/workspace/Budget_Tracker_Q1_2017.xlsx')
+
+# Calculate the total Scrap_Qty across all work orders
+total_scrap_qty = df['Actual_INR_Lakh'].sum()
+
+# Prepare the result
+result = {
+    "answer": total_scrap_qty,
+    "details": {
+        "total_scrap_qty": total_scrap_qty
+    }
+}
+
+# Print the result
+print("___RESULT___" + json.dumps(result, default=str))
+
+Verification: {'status': 'pass', 'reason': 'Execution succeeded and result validated.', 'result': {'answer': 46905.99999999999, 'details': {'total_scrap_qty': 46905.99999999999}}, 'warnings': []}
+  -> FAIL got=46905.99999999999 attempts=2 123.2s
+
+==============================================================================
+END-TO-END (default model): 0/2 passed
+==============================================================================
+Q   area                                           expected                got  att    sec  result
+--------------------------------------------------------------------------------------------------------------
+1   Operations / COO / Logistics           164,734,016.0000                  -    3  298.4  FAIL (no answer (Execution failed with non-zero exit code.
+
+Actual Traceback:))
+2   Operations / COO / Production                9,109.0000        46,906.0000    2  123.2  FAIL (wrong value)
+--------------------------------------------------------------------------------------------------------------
+total wall clock: 421.6s   mean: 210.8s/question
+########## ministral-3:8b ##########
+Ground truth recomputed from C:\Users\Admin\Desktop\SecProj\SecureGPT\corpus
+Code-generation model: ministral-3:8b
+
+
+==============================================================================
+Q1  [Operations / COO / Logistics]
+  In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?
+  expect sum(Cost_INR) = 164,734,016.0000   over 690 rows of Shipment_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'In the Q1 2017 logistics shipment data, what is the total shipment cost in INR across all shipments?'
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 30 files:   0%|          | 0/30 [00:00<?, ?it/s]Fetching 30 files: 100%|##########| 30/30 [00:00<00:00, 1079.45it/s]
+Loading weights:   0%|          | 0/391 [00:00<?, ?it/s]Loading weights: 100%|##########| 391/391 [00:00<00:00, 14796.39it/s]
+Calling Ollama API at http://localhost:11434 (model=ministral-3:8b)...
+============================================================
+FINAL ANSWER:
+Failed: LLM code generation failed: Ollama did not respond within 600 seconds.
+Original error: timed out
+============================================================
+Attempts used: 0
+  -> FAIL got=None attempts=0 1592.1s
+
+==============================================================================
+Q2  [Operations / COO / Production]
+  What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?
+  expect sum(Scrap_Qty) = 9,109.0000   over 712 rows of Work_Order_Data_Q1_2017.csv
+==============================================================================
+
+[Processing Query]: 'What is the total Scrap_Qty across all work orders in the Q1 2017 work order data?'
+
+Calling Ollama API at http://localhost:11434 (model=ministral-3:8b)...
+============================================================
+FINAL ANSWER:
+Failed: LLM code generation failed: Ollama did not respond within 600 seconds.
+Original error: timed out
+============================================================
+Attempts used: 0
+  -> FAIL got=None attempts=0 1505.5s
+
+==============================================================================
+END-TO-END (ministral-3:8b): 0/2 passed
+==============================================================================
+Q   area                                           expected                got  att    sec  result
+--------------------------------------------------------------------------------------------------------------
+1   Operations / COO / Logistics           164,734,016.0000                  -    0 1592.1  FAIL (no answer (unknown))
+2   Operations / COO / Production                9,109.0000                  -    0 1505.5  FAIL (no answer (unknown))
+--------------------------------------------------------------------------------------------------------------
+total wall clock: 3097.6s   mean: 1548.8s/question

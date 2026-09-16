@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.env
+outputs/temporary/*
+!outputs/temporary/.gitkeep
+outputs/visualizations/*
+!outputs/visualizations/.gitkeep
+outputs/summaries/*
+!outputs/summaries/.gitkeep
+outputs/extracted/*
+!outputs/extracted/.gitkeep
+logs/*
+!logs/.gitkeep
+.ipynb_checkpoints/

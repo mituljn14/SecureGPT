@@ -1,0 +1,80 @@
+# config/departments.yaml
+# Structure: data/<Main Department>/<Sub Department>/
+# Each MAIN department groups related sub-departments.
+# Each SUB department is an actual folder on disk and carries the
+# access_roles list — these are the units ingest.py reads permissions from.
+# Add / edit departments here — ingest.py needs no code changes.
+
+Executive_Corporate:
+  Corporate_Strategy:
+    access_roles:
+      - Corporate_Strategy
+      - CEO
+  Corporate_Communications:
+    access_roles:
+      - Corporate_Communications
+      - CEO
+  Enterprise_PMO:
+    access_roles:
+      - Enterprise_PMO
+      - CEO
+  Regional_Managing_Directors:
+    access_roles:
+      - Regional_Managing_Directors
+      - CEO
+
+Operations:
+  COO:
+    access_roles:
+      - COO
+      - CEO
+  Chief_Engineering_Officer:
+    access_roles:
+      - CEngO
+      - CEO
+
+Technology_Digital:
+  CTO:
+    access_roles:
+      - CTO
+      - CEO
+  CIO:
+    access_roles:
+      - CIO
+      - CEO
+  CISO:
+    access_roles:
+      - CISO
+      - CEO
+  CDO:
+    access_roles:
+      - CDO
+      - CEO
+
+Sales_Commercial:
+  CCO:
+    access_roles:
+      - CCO
+      - CEO
+  CMO:
+    access_roles:
+      - CMO
+      - CEO
+
+Finance:
+  CFO:
+    access_roles:
+      - CFO
+      - CEO
+
+People_Culture:
+  CHRO:
+    access_roles:
+      - CHRO
+      - CEO
+
+Legal_Compliance:
+  CLO:
+    access_roles:
+      - CLO
+      - CEO
