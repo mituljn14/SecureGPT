@@ -17,7 +17,7 @@ python-multipart
 rank-bm25
 litellm
 FlagEmbedding==1.3.3
-transformers==4.44.2
+transformers==5.10.1
 langgraph
 pymupdf
 
