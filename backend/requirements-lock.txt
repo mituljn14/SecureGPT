@@ -40,7 +40,7 @@ fastapi-cli==0.0.32
 fastapi-cloud-cli==0.24.0
 fastar==0.12.0
 fastuuid==0.14.0
-filelock==3.32.5
+filelock==4.2.1
 FlagEmbedding==1.4.2
 flatbuffers==25.12.19
 fonttools==4.64.0
