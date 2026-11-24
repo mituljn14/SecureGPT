@@ -85,7 +85,7 @@ langchain-text-splitters==1.1.2
 langgraph==1.2.11
 langgraph-checkpoint==4.2.0
 langgraph-prebuilt==1.1.0
-langgraph-sdk==0.4.4
+langgraph-sdk==0.4.6
 langsmith==0.11.2
 litellm==1.99.0
 llvmlite==0.49.0
